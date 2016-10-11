@@ -144,7 +144,7 @@
       text = MESSAGES[index];
       $message.append("<p>");
     }
-    $paragraph = $container.find("p");
+    $paragraph = $message.find("p");
     animate();
   };
 

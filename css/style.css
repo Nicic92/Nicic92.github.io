@@ -19,13 +19,12 @@ p, a {
 }
 
 #message {
-  margin-left: -375px;
-  margin-top: -250px;
+  margin-left: 354px;
+  margin-top: 106px;
   position: absolute;
   height: 230px;
   width: 285px;
-  left: 50%;
-  top: 50%;
+  
 
 }
 
