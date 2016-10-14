@@ -4,14 +4,6 @@ body {
   margin: 0;
 }
 
-p, a {
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-  font-family: Courier, monospace;
-  font-smoothing: antialiased;
-  margin: 0.8em 0;
-  font-size: 18px;
-  color: #B95;
-}
 
 .ghost,
 .glitch {
@@ -19,15 +11,14 @@ p, a {
 }
 
 #message {
-  margin-left: 354px;
-  margin-top: 106px;
   position: absolute;
-  height: 230px;
-  width: 285px;
-  
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  font-family: Courier, monospace;
+  font-smoothing: antialiased;
+  font-size: 18px;
+  color: #B95;
 
 }
-
 
 #animate {
   text-shadow: 0 0 8px rgba(209, 194, 165, 0.1);

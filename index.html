@@ -11,10 +11,16 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-
+        <link rel="stylesheet" href="css/cards.css"></link>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
          <script src="js/prefixfree.min.js"></script>
-         <link rel="stylesheet" href="css/cards.css"></link>
+         <script>
+function blinker() {
+    $('.blinking').fadeOut(500);
+    $('.blinking').fadeIn(500);
+}
+setInterval(blinker, 1000);
+</script>
     
     </head>
     <body>
@@ -22,16 +28,16 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div>
-        <img id="portfolioimg" src="img/Portfolio_image.jpg">
         <div id="message"></div>
     </div>    
 
         <div id="particlecont">   
              <div id="particles-js"></div>
         </div>
-        <p id="Btext">>_WEB.Dev</p>
-<div class="hero stripe"></div>
-    <aside class="tickets stripe visible-sm visible-md visible-lg">
+            <center><img id="portfolioimg" src="img/Portfolio_image.jpg"></center>
+        <div><p class="Btext">>_WEB.Dev</p></div>
+<div class="hero"></div>
+    <aside class="tickets visible-sm visible-md visible-lg">
         <div class="container">
             <div class="row target">
                 <div class="col-sm-3 col-md-2">
@@ -236,13 +242,13 @@
     
     
     
-        <script src="js/main2.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/index.js"></script>
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

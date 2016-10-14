@@ -5968,6 +5968,9 @@ body {
 }
 body {
   -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+/*background-image: url("https://www.transparenttextures.com/patterns/batthern.png");*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 .navbar-default {
   border: none;
