@@ -79,6 +79,7 @@ background: -webkit-radial-gradient(28% 45%, ellipse, #20202D 0%, #101018 75%, #
   background-position: 50% 50%;
   background-repeat: no-repeat;
   height: 750px;
+  border-bottom: 3px solid #EF5C4C
 }
 #portfolioimg {
     border-radius: 500rem;
