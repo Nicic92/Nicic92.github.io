@@ -12,6 +12,15 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="css/cards.css"></link>
+
+
+
+
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
          <script src="js/prefixfree.min.js"></script>
          <script>
@@ -27,14 +36,36 @@ setInterval(blinker, 1000);
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div>
+    <!-- <div>
         <div id="message"></div>
-    </div>    
+    </div>     -->
+        <div id="landing-slide" class="slide">
+    <div id="landing-overlay" class="slide">
+        <div id="landing-slide-content" class="container row">
+            <div class="left-pane col-md-12 col-xs-12" style="opacity: 0">
+                <div class="user-image"><img src="img/Portfolio_image.jpg"></div>
+                <div class="user-name">Milos Nicic</div>
+                <hr style="width:300px; margin-top:10px; margin-bottom: 10px; border-top: 1px solid #EA4040;"></hr>
+                    <div class="user-social">
+                    <a href="https://github.com/pecey" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.facebook.com/palash.chatterjee" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="mailto:palash.s.chatterjee@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://in.linkedin.com/in/palashchatterjee" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+                </div>
+            </div>
+            <!-- <div class="right-pane col-md-6 col-xs-12"> -->
+                <div id="message"></div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
 
+          
         <div id="particlecont">   
              <div id="particles-js"></div>
         </div>
-            <center><img id="portfolioimg" src="img/Portfolio_image.jpg"></center>
+          
         <div><p class="Btext">><span class="blinking">_</span>WEB.Dev</p></div>
 <div class="hero"></div>
     <aside class="tickets visible-sm visible-md visible-lg">
@@ -243,7 +274,16 @@ setInterval(blinker, 1000);
         <script src="js/app.js"></script>
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
         <script src="js/plugins.js"></script>
-        
+        <script type="text/javascript">
+        $(window).load(function(){
+            $(".left-pane").fadeTo(2000,1).animate({
+                width:"50%",
+            }, 1000).addClass("col-md-6").removeClass("col-md-12").css("width","100%").animate({"border-right-width":"1"},500,function(){
+                $(".right-pane").css("height",$(".left-pane").css("height"));
+                $(".user-info")
+            });
+        });
+    </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

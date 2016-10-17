@@ -4,27 +4,27 @@
   MESSAGES = [];
 
   MESSAGES.push({
-    delay: 0,
+    delay: 4000,
     text: "Incoming transmission..."
   });
 
   MESSAGES.push({
-    delay: 1200,
+    delay: 5200,
     text: "Milica je govno"
   });
 
   MESSAGES.push({
-    delay: 2200,
+    delay: 6400,
     text: "salim se."
   });
 
   MESSAGES.push({
-    delay: 3600,
+    delay: 7600,
     text: "Milica je kraljica"
   });
 
   MESSAGES.push({
-    delay: 5200,
+    delay: 8800,
     text: "ende bicheszzz"
   });
 
@@ -151,3 +151,4 @@
   initialise();
 
 }).call(this);
+

@@ -16,7 +16,7 @@ html {
     text-shadow: none;
 }
 
-hr {
+/*hr {
     display: block;
     height: 1px;
     border: 0;
@@ -24,7 +24,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
+*/
 audio,
 canvas,
 iframe,
@@ -84,8 +84,8 @@ background: -webkit-radial-gradient(28% 45%, ellipse, #20202D 0%, #101018 75%, #
 #portfolioimg {
     border-radius: 500rem;
     height: 270px;
-    transform: translate(0%, -60%);
-    margin-bottom: -141px;
+   /* transform: translate(0%, -60%);
+    margin-bottom: -141px;*/
 
 }
 
