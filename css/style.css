@@ -49,7 +49,7 @@ body {
 .slide{
   width: 100%;
   position: absolute;
-  /*top: 20%;*/
+  top: 9%;
 }
 
 #landing-overlay{
@@ -80,10 +80,7 @@ body {
 .user-info p{
   margin: 20px 0px;
 }
-.user-name{
-  font-size: 2em;
-  padding: 5px;
-}
+
 .user-image{
   height: 200px;
   width: 100%;

@@ -39,7 +39,7 @@ setInterval(blinker, 1000);
     <!-- <div>
         <div id="message"></div>
     </div>     -->
-        <div id="landing-slide" class="slide">
+<!-- <div id="landing-slide" class="slide">
     <div id="landing-overlay" class="slide">
         <div id="landing-slide-content" class="container row">
             <div class="left-pane col-md-12 col-xs-12" style="opacity: 0">
@@ -54,14 +54,29 @@ setInterval(blinker, 1000);
                     <a href="Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
                 </div>
             </div>
-            <!-- <div class="right-pane col-md-6 col-xs-12"> -->
+            
                 <div id="message"></div>
-            <!-- </div> -->
+            
         </div>
     </div>
 </div>
+ -->
+   <div class="portfoliodiv">
+        <img src="img/Portfolio_image.jpg" id="portfolioimg"/> 
+        <p class="user-name">Milos Nicic</p>
+        <hr style="width:300px; margin-top:10px; margin-bottom: 10px; border-top: 1px solid #EA4040;"></hr>
+                    <div class="user-social">
+                    <a href="https://github.com/pecey" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.facebook.com/palash.chatterjee" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="mailto:palash.s.chatterjee@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://in.linkedin.com/in/palashchatterjee" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+                </div>
 
-          
+   </div>
+
+   <!-- <div id="message"></div> -->
+
         <div id="particlecont">   
              <div id="particles-js"></div>
         </div>
@@ -218,49 +233,7 @@ setInterval(blinker, 1000);
                         </div>
                     </div>
                 </div>
-                <!-- <div class="visible-lg">
-                    <div class="col-sm-3 col-md-2">
-                        <div class="ticket type2" style="transform: translate3d(-456.971px, -599.135px, 0px) rotate3d(0, 0, 1, -83.2062deg);">
-                            <div class="title"><span class="glyphicon glyphicon-heart"></span></div>
-                            <p><strong>What is love?</strong></p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <div class="ticket type3" style="transform: translate3d(-456.513px, -547.469px, 0px) rotate3d(0, 0, 1, 41.2957deg);">
-                            <div class="title"><span class="glyphicon glyphicon-eye-open"></span></div>
-                            <p><strong>Live and let die</strong></p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <div class="ticket type1" style="transform: translate3d(-545.694px, -465.074px, 0px) rotate3d(0, 0, 1, 41.7967deg);">
-                            <div class="title"><span class="glyphicon glyphicon-cloud-upload"></span></div>
-                            <p><strong>Move business to cloud</strong></p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <div class="ticket type4" style="transform: translate3d(435.02px, -466.641px, 0px) rotate3d(0, 0, 1, 102.059deg);">
-                            <div class="title"><span class="glyphicon glyphicon-print"></span></div>
-                            <p><strong>Print all emails</strong></p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <div class="ticket type3" style="transform: translate3d(537.29px, -588.891px, 0px) rotate3d(0, 0, 1, -63.0186deg);">
-                            <div class="title"><span class="glyphicon glyphicon-globe"></span></div>
-                            <p><strong>Assimilate humans</strong></p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <div class="ticket type1" style="transform: translate3d(486.095px, -514.263px, 0px) rotate3d(0, 0, 1, -124.231deg);">
-                            <div class="title"><span class="glyphicon glyphicon-circle-arrow-down"></span></div>
-                            <p><strong>Keep scrolling</strong></p>
-                           
-                        </div>
-                    </div> -->
+                <
                 </div>
             </div>
         </div>
@@ -272,18 +245,20 @@ setInterval(blinker, 1000);
         <script src="js/index.js"></script>
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>
-        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
         <script src="js/plugins.js"></script>
         <script type="text/javascript">
         $(window).load(function(){
-            $(".left-pane").fadeTo(2000,1).animate({
-                width:"50%",
-            }, 1000).addClass("col-md-6").removeClass("col-md-12").css("width","100%").animate({"border-right-width":"1"},500,function(){
+           $('.portfoliodiv').fadeTo(2000,1).animate({width:"25%", marginLeft: '100px'},1500);
+        });
+    </script>
+     <!-- <script type="text/javascript">
+        $(window).load(function(){
+            $(".left-pane").fadeTo(2000,1).animate({width:"50%",}, 1000).addClass("col-md-6").removeClass("col-md-12").css("width","100%").animate({"border-right-width":"1"},500,function(){
                 $(".right-pane").css("height",$(".left-pane").css("height"));
                 $(".user-info")
             });
         });
-    </script>
+    </script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
