@@ -12,78 +12,59 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="css/cards.css"></link>
-
-
-
-
+        <link rel="preload" href="camphor/4b0f2143-ed99-4a36-8778-557047d0a0a3.woff2" as="font" type="font/woff2" crossorigin>
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    
-
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
          <script src="js/prefixfree.min.js"></script>
-         <script>
-function blinker() {
-    $('.blinking').fadeOut(500);
-    $('.blinking').fadeIn(500);
-}
-setInterval(blinker, 1000);
-</script>
+    <script>
+        function blinker() {
+        $('.blinking').fadeOut(500);
+        $('.blinking').fadeIn(500);
+        }
+        setInterval(blinker, 1000);
+    </script>
     
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <!-- <div>
-        <div id="message"></div>
-    </div>     -->
-<!-- <div id="landing-slide" class="slide">
-    <div id="landing-overlay" class="slide">
-        <div id="landing-slide-content" class="container row">
-            <div class="left-pane col-md-12 col-xs-12" style="opacity: 0">
-                <div class="user-image"><img src="img/Portfolio_image.jpg"></div>
-                <div class="user-name">Milos Nicic</div>
+    <div id="particlecont">   
+        <div id="particles-js">
+            <div class="portfoliodiv">
+                <img src="img/Portfolio_image.jpg" id="portfolioimg"/> 
+                <p class="user-name">Milos Nicic</p>
                 <hr style="width:300px; margin-top:10px; margin-bottom: 10px; border-top: 1px solid #EA4040;"></hr>
                     <div class="user-social">
-                    <a href="https://github.com/pecey" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://www.facebook.com/palash.chatterjee" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="mailto:palash.s.chatterjee@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                    <a href="https://in.linkedin.com/in/palashchatterjee" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="mailto: target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
                     <a href="Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
                 </div>
+
             </div>
-            
+            <div class="hzline">
                 <div id="message"></div>
-            
+            </div>
+
+
         </div>
     </div>
-</div>
- -->
-   <div class="portfoliodiv">
-        <img src="img/Portfolio_image.jpg" id="portfolioimg"/> 
-        <p class="user-name">Milos Nicic</p>
-        <hr style="width:300px; margin-top:10px; margin-bottom: 10px; border-top: 1px solid #EA4040;"></hr>
-                    <div class="user-social">
-                    <a href="https://github.com/pecey" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://www.facebook.com/palash.chatterjee" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="mailto:palash.s.chatterjee@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                    <a href="https://in.linkedin.com/in/palashchatterjee" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <a href="Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
-                </div>
+         
+    <div>
+        <p class="Btext">><span class="blinking">_</span>WEB.Dev</p>
+    </div>
 
-   </div>
-
-   <!-- <div id="message"></div> -->
-
-        <div id="particlecont">   
-             <div id="particles-js"></div>
-        </div>
-          
-        <div><p class="Btext">><span class="blinking">_</span>WEB.Dev</p></div>
-<div class="hero"></div>
-    <aside class="tickets visible-sm visible-md visible-lg">
+    <div id="devicon">
+        <i class="fa fa-cogs fa-5x"></i>
+        <p class="Ntext">Skills and tools</p>
+    </div>
+    
+    <div class="hero"></div>
+        <aside class="tickets visible-sm visible-md visible-lg">
         <div class="container">
             <div class="row target">
                 <div class="col-sm-3 col-md-2">
@@ -237,7 +218,7 @@ setInterval(blinker, 1000);
                 </div>
             </div>
         </div>
-    </aside>
+        </aside>
     
     
     
@@ -248,7 +229,9 @@ setInterval(blinker, 1000);
         <script src="js/plugins.js"></script>
         <script type="text/javascript">
         $(window).load(function(){
-           $('.portfoliodiv').fadeTo(2000,1).animate({width:"25%", marginLeft: '100px'},1500);
+           $('.portfoliodiv').fadeTo(2000,1).animate({width:"25%", marginLeft: '14%'},1500, function(){
+            $('.hzline').fadeTo(1000, 1);
+           });
         });
     </script>
      <!-- <script type="text/javascript">

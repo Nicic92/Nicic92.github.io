@@ -11,13 +11,15 @@ body {
 }
 
 #message {
-  float: left;
+  position: absolute;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
   font-family: Courier, monospace;
   font-smoothing: antialiased;
-  font-size: 18px;
+  font-size: 23px;
   color: #B95;
-
+  top: 7%;
+  left: 180px;
+  width: 304px;
 }
 
 #animate {

@@ -25,8 +25,15 @@
 
   MESSAGES.push({
     delay: 8800,
-    text: "ende bicheszzz"
+    text: "ende bicheszzz dygacko nesto"
   });
+
+  MESSAGES.push({
+    delay: 10000,
+    text: "jos nesto mora da bue"
+  });
+
+
 
   $container = $("#container");
 

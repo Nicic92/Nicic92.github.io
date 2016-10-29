@@ -55,15 +55,46 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#path_1 {
+    box-sizing: border-box;
+    color: rgb(36, 180, 126);
+    letter-spacing: 0.55px;
+    text-align: center;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    column-rule-color: rgb(36, 180, 126);
+    fill: rgb(27, 185, 120);
+    d: path('M 21.6 26.8 L 19 25 l -1.3 1 l 1.4 3 c 0 0.2 -0.3 0.4 -0.5 0.6 l -3 -0.8 l -1 1.4 l 2.4 2.3 l -0.4 0.8 l -3.2 0.3 l -0.3 1.6 l 3 1.4 v 0.8 l -3 1.4 l 0.4 1.6 l 3.2 0.3 c 0 0.3 0.2 0.5 0.3 0.8 l -2.4 2.3 l 0.8 1.4 l 3 -0.8 l 0.7 0.6 l -1.3 3 l 1.3 1 l 2.6 -1.8 c 0.3 0 0.5 0.3 0.8 0.4 l -0.3 3.2 l 1.6 0.6 l 2 -2.7 c 0.2 0 0.5 0 0.7 0.2 l 1 3 h 1.5 l 1 -3 c 0 -0.2 0.4 -0.2 0.7 -0.3 l 2 2.7 l 1.4 -0.6 l -0.4 -3.2 c 0.3 0 0.5 -0.3 0.8 -0.4 L 37 49 l 1.3 -1 l -1.4 -3 c 0 -0.2 0.3 -0.4 0.5 -0.6 l 3 0.8 l 1 -1.4 l -2.4 -2.3 l 0.4 -0.8 l 3.2 -0.3 l 0.3 -1.6 l -3 -1.4 v -0.8 l 3 -1.4 l -0.4 -1.6 l -3.2 -0.3 c 0 -0.3 -0.2 -0.5 -0.3 -0.8 l 2.4 -2.3 l -0.8 -1.4 l -3 0.8 l -0.7 -0.6 l 1.3 -3 l -1.3 -1 l -2.6 1.8 c -0.3 0 -0.5 -0.3 -0.8 -0.4 l 0.3 -3.2 l -1.6 -0.6 l -2 2.7 c -0.2 0 -0.5 0 -0.7 -0.2 l -1 -3 h -1.5 l -1 3 c 0 0.2 -0.4 0.2 -0.7 0.3 l -2 -2.7 l -1.4 0.6 l 0.4 3.2 c -0.3 0 -0.5 0.3 -0.8 0.4 Z');
+    border: 0px none rgb(36, 180, 126);
+    font: normal normal 600 normal 22px / 33px Camphor, "Open Sans", "Segoe UI", sans-serif;
+    outline: rgb(36, 180, 126) none 0px;
+}/*#path_1*/
+
+#devicon{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 .Btext{
     font-size: 100px;
     color: #000000;
-    margin-top: : 20px;
-    margin-bottom: 330px;
+    margin-top: 20px;
+    /*margin-bottom: 330px;*/
     text-align: center;
     font-family: monospace;
 }
-.Ntext{}
+.Ntext{
+   font-size: 42px;
+    color: #24b47e;
+    margin-top: 35px;
+    text-align: center;
+    font-family: Camphor;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+}
 
 
 #particlecont {
@@ -84,8 +115,20 @@ background: -webkit-radial-gradient(28% 45%, ellipse, #20202D 0%, #101018 75%, #
 #portfolioimg {
     border-radius: 500rem;
     height: 240px;
-    
+    }
 
+.hzline{
+    border-right: 2px solid;
+    position: absolute;
+    height: 386px;
+    width: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 73px;
+    opacity: 0;
 }
 .portfoliodiv{
 /*transform: translate(50%, 30%);*/
