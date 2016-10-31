@@ -5372,7 +5372,11 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
+
 /*background-image: url("https://www.transparenttextures.com/patterns/batthern.png");*/
+
+background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/binding_dark.png);
+
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 .navbar-default {
@@ -6305,4 +6309,7 @@ html.android .btn-not-android {
 }
 img.android-get-it-badge {
   max-width: 200px;
+}
+.zhide{
+  z-index: -1;
 }
