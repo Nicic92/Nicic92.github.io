@@ -243,13 +243,13 @@ table {
     border: 1px solid #ddd !important;
   }
 }
-*,
+/**,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
+}*/
 html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -899,7 +899,7 @@ pre code {
     width: 33.33333333%;
   }
   .col-sm-3 {
-    width: 25%;
+    width: 14%;
   }
   .col-sm-2 {
     width: 16.66666667%;
@@ -1054,7 +1054,7 @@ pre code {
     width: 25%;
   }
   .col-md-2 {
-    width: 16.66666667%;
+    width: 14%;
   }
   .col-md-1 {
     width: 8.33333333%;
@@ -5589,7 +5589,7 @@ background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/pa
   backface-visibility: hidden;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  height: 207px;
+  height: 163px;
   font-size: 19px;
   margin-bottom: 1em;
   text-align: center;
