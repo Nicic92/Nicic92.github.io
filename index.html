@@ -52,13 +52,13 @@
 
         </div>
     </div>
-    <p class="Btext">><span class="blinking">_</span>WEB.Dev</p>
-    <!-- <div id="particles-js2"></div>    -->  
+    <!-- <h1 class="Btext">><span class="blinking">_</span>WEB.Dev</h1> -->
+    
     
 
     <div id="devicon">
         <i class="fa fa-cogs fa-5x"></i>
-        <p class="Ntext">Skills and tools</p>
+        <p class="Ntext">Languages and tools</p>
     </div>
     
     <div class="hero"></div>
@@ -217,9 +217,33 @@
             </div>
         </div>
         </aside>
+    <section id="hire">
+    <h1>Contact Me</h1>
     
+    <form>
+          <div class="field name-box">
+                <input type="text" id="name" placeholder="Who Are You?"/>
+                <label for="name">Name</label>
+                <span class="ss-icon">check</span>
+          </div>
+
+          <div class="field email-box">
+                <input type="text" id="email" placeholder="name@email.com"/>
+                <label for="email">Email</label>
+                <span class="ss-icon">check</span>
+          </div>
+
+          <div class="field msg-box">
+                <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+                <label for="msg">Msg</label>
+                <span class="ss-icon">check</span>
+          </div>
+
+          <input class="button" type="submit" value="Send" />
+  </form>
+</section>
         
-  
+        <script src="js/baffle.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/index.js"></script>
         <script src="js/particles.js"></script>
@@ -232,7 +256,29 @@
            });
         });
     </script>
-     
+     <script> let b = baffle('.user-name').start().reveal(1000, 1500);</script>
+
+     <script> let gibberish = [
+    '\u2588',
+    '\u2593',
+    '\u2592',
+    '\u2591',
+    '\u2588',
+    '\u2593',
+    '\u2592',
+    '\u2591',
+    '\u2588',
+    '\u2593',
+    '\u2592',
+    '\u2591',
+    '\u003c',
+    '\u003e',
+    '\u002f'
+];
+
+let  c = baffle('.Btext', {
+    characters: gibberish
+}).start().reveal(2500, 4500);</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
