@@ -171,6 +171,7 @@ body {
   color: #B6B6B6;
 }
 .hire {
+  position: relative;
   font-size:62.5%;
   margin: 100px auto 73px;
   text-align: center;
@@ -180,16 +181,17 @@ body {
   border: 2px solid #333;
   border-top: none;
  
-box-shadow: 0px 0px 35px 8px rgba(0,0,0,0.75);
+/*box-shadow: 0px 0px 35px 8px rgba(0,0,0,0.75);*/
 
 }
 .hire h1 { 
   margin-top: -24px;
-  margin-bottom: 40px;
+  margin-bottom: 68px;
   font-size: 4em;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
+  display: inline-block;
 }
 form {
   width: 58.33333%;
@@ -287,7 +289,7 @@ form input[type="submit"] {
   color: white;
   -webkit-appearance: none;
   border: none;
-  margin-top: 15px;
+  margin-top: 48px;
   text-transform: uppercase;
   position: relative;
   padding: 13px 50px;
@@ -310,16 +312,16 @@ form input[type="submit"]:focus {
   background: #cd6302;
 }
 .top-border{
-    
+    position: absolute;
     height: 2px;
     width: 24%;
     background-color: #333;
 }
 .levo{
-    float: left;
+    left: 0;
 }
 .desno{
-    float: right;
+    right: 0;
 }
 
 /* ==========================================================================
