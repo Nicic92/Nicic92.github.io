@@ -102,32 +102,27 @@ textarea {
 
 
 #particlecont {
-    background: -webkit-radial-gradient(68% 33%, ellipse, #20202D 0%, #101018 75%, #060612 100%);
-    background: -moz-radial-gradient(68% 33%, ellipse, #20202D 0%, #101018 75%, #060612 100%);}
+    /*background: -webkit-radial-gradient(68% 33%, ellipse, #20202D 0%, #101018 75%, #060612 100%);
+    background: -moz-radial-gradient(68% 33%, ellipse, #20202D 0%, #101018 75%, #060612 100%);*/
+}
   
 /* ---- particles.js container ---- */
 #particles-js{
+    position: relative;
   width: 100%;
   height: 100%;
   /*background-color: #171223;*/
-  background-image: url('');
+  background: -webkit-radial-gradient(68% 33%, ellipse, #20202D 0%, #101018 75%, #060612 100%);
+    background: -moz-radial-gradient(68% 33%, ellipse, #20202D 0%, #101018 75%, #060612 100%);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   height: 750px;
-  border-bottom: 3px solid #EF5C4C
+  border-bottom: 3px solid #EF5C4C;
+  z-index: 1;
+
 }
-#particles-js2{
-  width: 100%;
-  height: 100%;
-  /*background-color: #171223;*/
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  height: 750px;
-  border-bottom: 3px solid #EF5C4C
-}
+
 #portfolioimg {
     border-radius: 500rem;
     height: 240px;
@@ -170,6 +165,8 @@ body {
   font-weight: 300;
   color: #B6B6B6;
 }
+
+/*contact me */
 .hire {
   position: relative;
   font-size:62.5%;
@@ -323,6 +320,94 @@ form input[type="submit"]:focus {
 .desno{
     right: 0;
 }
+
+/*footer drop*/
+
+.footernav{
+  
+  margin: 0px auto;
+  text-align: center;
+ 
+  font-weight: bold;
+  color: black;
+  font-size: 2.125rem;
+  
+}
+
+.wrapper {
+  min-height: 100vh;
+  transform-origin: center bottom 0px;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.5);
+  padding-bottom: 100px;
+  background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/binding_dark.png);
+}
+
+body.tight .wrapper {
+  transform: translateY(-60px) scale(0.9);
+  cursor: pointer;
+}
+
+
+/*invitite background scroll */
+
+
+
+@-webkit-keyframes scrollGood {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -320px, 0);
+            transform: translate3d(0, -320px, 0);
+  }
+}
+@keyframes scrollGood {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -320px, 0);
+            transform: translate3d(0, -320px, 0);
+  }
+}
+.pen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.panel {
+  padding: 3rem;
+  height: 100%;
+}
+
+.bottom {
+  background-color: #31CC70;
+  overflow: hidden;
+  position: relative;
+}
+.scroll {
+  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+  background-position: center center;
+  
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 400%;
+  width: 100%;
+  -webkit-animation: scrollGood 5s linear infinite;
+  animation: scrollGood 5s linear infinite;
+  z-index: -1;
+}
+
+
+
+
 
 /* ==========================================================================
    Media Queries
