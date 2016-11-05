@@ -32,30 +32,31 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<div class="scroll"></div>
+<!-- <div class="scroll"></div> -->
     <div class="wrapper">
-        <div id="particlecont">   
-            <div id="particles-js">
-                <div class="portfoliodiv">
+          
+        <div id="particles-js">
+             <h1 class="glitchtxt" data-text="ウェブ">ウェブ</h1>
+             <div class="portfoliodiv">
+                <div class="portinfo">
                     <img src="img/Portfolio_image.jpg" id="portfolioimg"/> 
                     <p class="user-name">Milos Nicic</p>
                     <hr style="width:300px; margin-top:10px; margin-bottom: 10px; border-top: 1px solid #EA4040;"></hr>
-                        <div class="user-social">
+                    <div class="user-social">
                         <a href="" target="_blank"><i class="fa fa-github"></i></a>
                         <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
                         <a href="mailto: target="_blank"><i class="fa fa-envelope"></i></a>
                         <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
                         <a href="Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
                     </div>
-
                 </div>
-                <div class="hzline">
-                    <div id="message"></div>
-                </div>
-
+                
+                <div class="hzline"></div>
+                <div id="message"></div>
             </div>
         </div>
-        <!-- <h1 class="Btext">><span class="blinking">_</span>WEB.Dev</h1> -->
+        
+        <!-- <h1 class="Btext">><span class="blinking">_</span>Web.Dev</h1> -->
         
         
         
@@ -250,7 +251,7 @@
 
         
     </div>
-
+<!-- <div class="scroll"></div> -->
     <div class="footernav">
         
         sss
@@ -265,14 +266,14 @@
         <script src="js/plugins.js"></script>
         <script type="text/javascript">
         $(window).load(function(){
-           $('.portfoliodiv').fadeTo(2000,1).animate({width:"25%", marginLeft: '14%'},1500, function(){
-            $('.hzline').fadeTo(1000, 1);
+           $('.portinfo').fadeTo(2000,1).animate({width:"25%", marginLeft: '14%'},1500, function(){
+            $('.hzline').fadeTo(1000, 1)
            });
         });
     </script>
      <script> let b = baffle('.user-name').start().reveal(1000, 1500);</script>
 
-     <script> let gibberish = [
+     <!-- <script> let gibberish = [
     '\u2588',
     '\u2593',
     '\u2592',
@@ -293,7 +294,7 @@
 let  c = baffle('.Btext', {
     characters: gibberish
 }).start().reveal(2500, 4500);</script>
-
+ -->
 
 <script>
     $(document).ready(function($) {
