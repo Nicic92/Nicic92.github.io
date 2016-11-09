@@ -5596,6 +5596,7 @@ body {
   overflow: hidden;
   padding: 27px;
   position: relative;
+  color: #ffffff;
 }
 @media (max-width: 1199px) {
   .tickets .ticket {
@@ -5613,36 +5614,8 @@ body {
   padding: 4px 0px;
   text-align: center;
 }
-.tickets .ticket.type1 {
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  background: #ffe35b;
-  color: #ef5c4b;
-}
-.tickets .ticket.type1 .title {
-  color: #ffe35b;
-}
-.tickets .ticket.type2 {
-  background: #00a7ed;
-  color: #ffffff;
-}
-.tickets .ticket.type2 .title {
-  color: #00a7ed;
-}
-.tickets .ticket.type3 {
-  background: #ef5c4c;
-  color: #ffffff;
-}
-.tickets .ticket.type3 .title {
-  color: #ef5c4c;
-}
-.tickets .ticket.type4 {
-  background: #273e7a;
-  color: #ffffff;
-}
-.tickets .ticket.type4 .title {
-  color: #273e7a;
-}
+
+
 .workspaces .feature {
   text-align: center;
   margin-top: 30px;
