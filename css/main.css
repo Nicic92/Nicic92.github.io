@@ -76,16 +76,25 @@ textarea {
 
 /*Glich tekst*/
 
+@font-face {
+font-family: 'Tele-Marines';
+font-style: normal;
+font-weight: normal;
+src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
+}
+
 .glitchtxt {
   color: white;
-  font-size: 100px;
+  font-size: 80px;
   position: absolute;
-  width: 300px;
-  margin: 10px auto;
+  width: 527px;
+  margin: 20px auto;
   height: 0px;
   left: 0;
   right: 0;
   opacity: 0;
+  font-family:'Tele-Marines';
+
 }
 
 @keyframes noise-anim {
@@ -293,7 +302,7 @@ left: 0;
 right: 0;
 top: 0;
 /*margin-top: 73px;*/
-margin-top: 150px;
+margin-top: 175px;
 
 }
 .portinfo{

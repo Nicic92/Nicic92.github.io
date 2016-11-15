@@ -5,7 +5,7 @@
 
   MESSAGES.push({
     delay: 4000,
-    text: ">_Web application developer"
+    text: "Web application developer"
   });
 
   MESSAGES.push({
@@ -34,7 +34,7 @@
   });
 MESSAGES.push({
     delay: 15000,
-    text: "..sometimes"
+    text: "..sometimes_"
   });
 
   $container = $("#container");
