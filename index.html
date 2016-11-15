@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-         <script src="js/prefixfree.min.js"></script>
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+         
     <script>
         function blinker() {
         $('.blinking').fadeOut(500);
@@ -37,7 +37,8 @@
     <div class="wrapper">
           
         <div id="particles-js">
-             <h1 class="glitchtxt" data-text="ウェブ">ウェブ</h1>
+             <h1 class="glitchtxt" data-text="WEB.DEV">WEB.DEV</h1>
+             <!-- <h1 class="glitchtxt" data-text="ウェブ">ウェブ</h1> -->
              <div class="portfoliodiv">
                 <div class="portinfo">
                     <img src="img/Portfolio_image.jpg" id="portfolioimg"/> 
@@ -258,13 +259,15 @@
             
                 </div> -->
 
-
+        <script src="js/prefixfree.min.js"></script>
         <script src="js/baffle.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/index.js"></script>
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/waypoints.js"></script>
         <script type="text/javascript">
         $(window).load(function(){
            $('.portinfo').fadeTo(2000, 0.9).animate({width:"25%", marginLeft: '14%'},1500, function(){
@@ -276,11 +279,12 @@
 
 
 <script>
+//footer scroll
     $(document).ready(function($) {
 
   $(window).on('scroll', function() {
 
-    //ADD .TIGHT
+    
     if ($(window).scrollTop() + $(window).height() > $('.wrapper').outerHeight()) {
       $('body').addClass('tight');
     } else {
@@ -288,15 +292,35 @@
     }
   });
 
-  //BACK TO PRESENTATION MODE
+  
   $("html").on("click", "body.tight .wrapper", function() {
     $('html, body').animate({
       scrollTop: $('.wrapper').outerHeight() - $(window).height()
     }, 500);
   });
-
 });
 </script>
+<script> 
+//elements fade in's
+$(document).ready(function(){
+     
+  $('.devicon').css('opacity', 0);
+  $('.hire').css('opacity', 0);
+
+$('.devicon').waypoint(function() {
+      $('.devicon').addClass('animated fadeInDown');
+  }, { offset: '70%' });
+    $('.hire').waypoint(function() {
+      $('.hire').addClass('animated fadeIn');
+      $('.name-box').addClass('animated fadeInDown');
+      $('.email-box').addClass('animated fadeInRight');
+      $('.msg-box').addClass('animated fadeInLeft');
+      $('.button').addClass('animated fadeInUp');
+  }, { offset: '60%' });
+ });
+  
+</script>
+<!-- Card hover effect -->
 <!-- <script>
     $(function(){
         $('.col-md-2').hover(function(){
@@ -307,7 +331,7 @@
     });
 
 </script> -->
-<!-- <script>
+<script>
 $(function() {
     $(".col-md-2").hover(function(){
     $(this).stop().animate({"top" : "-35px"},200);
@@ -315,7 +339,8 @@ $(function() {
     $(this).stop().animate({"top": "0"},200);
     });
     });
-</script> -->
+</script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -5,35 +5,37 @@
 
   MESSAGES.push({
     delay: 4000,
-    text: "Incoming transmission..."
+    text: ">_Web application developer"
   });
 
   MESSAGES.push({
     delay: 5200,
-    text: "Milica je govno"
+    text: "Information security enthusiast"
   });
 
   MESSAGES.push({
     delay: 6400,
-    text: "salim se."
+    text: "Loves clean ui"
   });
 
   MESSAGES.push({
     delay: 7600,
-    text: "Milica je kraljica"
+    text: "Creating fast, responsive websites"
   });
 
   MESSAGES.push({
     delay: 8800,
-    text: "ende bicheszzz dygacko nesto"
+    text: "Constantly learning new tech"
   });
 
   MESSAGES.push({
     delay: 10000,
-    text: "jos nesto mora da bue"
+    text: "Also do other computer stuff.."
   });
-
-
+MESSAGES.push({
+    delay: 15000,
+    text: "..sometimes"
+  });
 
   $container = $("#container");
 
