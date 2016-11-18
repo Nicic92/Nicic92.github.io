@@ -254,6 +254,7 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
 }
 
 
+
 #particlecont {
     /*background: -webkit-radial-gradient(68% 33%, ellipse, #20202D 0%, #101018 75%, #060612 100%);
     background: -moz-radial-gradient(68% 33%, ellipse, #20202D 0%, #101018 75%, #060612 100%);*/
@@ -329,13 +330,15 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #B6B6B6;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  background-color: #1b1b27;
 }
 
 /*contact me */
 .hire {
   position: relative;
   font-size:62.5%;
-  margin: 100px auto 73px;
+  margin: 110px auto 35px;
   text-align: center;
   padding: 0px 0 60px;
   width: 80%;
@@ -488,96 +491,165 @@ form input[type="submit"]:focus {
 
 /*footer drop*/
 
-.footernav{
+/*.footernav{
   text-align: center;
   font-weight: bold;
   color: white;
   font-size: 25px;
-  border-top: 3px solid #29b7e2;
-  background-image: url(https://static.helloworld.rs/img/texture_layer.png);
   height: 150px;
-  background-color: rgba(55, 112, 162, 0.36);
-}
-
-.wrapper {
-  min-height: 100vh;
-  transform-origin: center bottom 0px;
-  transition: all 0.5s ease 0s;
-  box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.5);
-  padding-bottom: 100px;
-  /*background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/binding_dark.png);*/
-  /*background-image:url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");*/
-  /*background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");*/
-  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
-  background-color: #1b1b27;
-
-}
-
-body.tight .wrapper {
-  transform: translateY(-60px) scale(0.9);
-  cursor: pointer;
-}
-
-
-/*invitite background scroll */
-
-
-
-@-webkit-keyframes scrollGood {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, -320px, 0);
-            transform: translate3d(0, -320px, 0);
-  }
-}
-@keyframes scrollGood {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, -320px, 0);
-            transform: translate3d(0, -320px, 0);
-  }
-}
-.pen {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-}
-
-.panel {
-  padding: 3rem;
-  height: 100%;
-}
-
-.bottom {
-  background-color: #31CC70;
-  overflow: hidden;
-  position: relative;
-}
-.scroll {
-  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
-  background-position: center center;
   
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 400%;
-  width: 100%;
-  -webkit-animation: scrollGood 5s linear infinite;
-  animation: scrollGood 5s linear infinite;
-  z-index: -1;
+}*/
+
+/*heart*/
+.withLove {
+    overflow: hidden;
+    text-align: center;
+    padding: 32px 0 40px;
+    cursor: default;
+    color: #616c84;
+    gony: relative;
+    left: -2vw
 }
 
+@media screen and (min-width: 420px) {
+    .withLove {
+        padding:48px 0 70px
+    }
+}
 
+.withLove a {
+    -webkit-transition: all .16s ease-out;
+    transition: all .16s ease-out
+}
 
+.withLove * {
+    display: inline-block
+}
 
+.withLove .alpha,.withLove .omega {
+    box-sizing: border-box;
+    width: 40%;
+    font-size: 16px
+}
+
+@media screen and (min-width: 440px) {
+    .withLove .alpha,.withLove .omega {
+        font-size:24px
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .withLove .alpha,.withLove .omega {
+        font-size:28px
+    }
+}
+
+.withLove .alpha {
+    text-align: right;
+    padding-right: 3px
+}
+
+.withLove .omega {
+    text-align: left;
+    padding-left: 3px
+}
+
+.withLove .heart {
+    margin: 0 -2px;
+    position: relative;
+    z-index: 2;
+    -webkit-animation: a 1.33s ease-in-out infinite;
+    animation: a 1.33s ease-in-out infinite;
+    width: 32px;
+    height: 32px
+}
+
+@media screen and (min-width: 440px) {
+    .withLove .heart {
+        width: 64px;
+        height: 64px
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .withLove .heart {
+        width: 80px;
+        height: 80px
+    }
+}
+
+.withLove .heart path {
+    fill: #ff005d
+}
+
+@-webkit-keyframes a {
+    0% {
+        -webkit-transform: scale(1)
+    }
+
+    50% {
+        -webkit-transform: scale(.8)
+    }
+}
+
+@-webkit-keyframes a {
+    0%,to {
+        -webkit-transform: scale(1)
+    }
+
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        -webkit-transform: scale(.8);
+        transform: scale(.8)
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes a {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    50% {
+        -webkit-transform: scale(.8);
+        transform: scale(.8)
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+.content {
+    width:100%;
+    /*height:1500px;*/
+    margin-bottom:180px;
+    padding-bottom: 35px;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    background-color: #1b1b27;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 30px -20px;
+
+  }
+  
+.footerbt {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:180px;
+    z-index:-1;
+    /*background-color:#000;*/
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    background-color: #1b1b27;
+  } 
 
 /* ==========================================================================
    Media Queries
