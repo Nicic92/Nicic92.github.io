@@ -62,7 +62,7 @@
         
             
             <div class="devicon">
-                <i class="fa fa-cogs fa-1x"></i><span class="scramble">  ><span class="blinking">_</span>Skills and tools</span>
+                <i class="fa fa-cogs fa-1x"></i><span class="scramble">  ><span>_</span>Skills and tools</span>
             </div>
                
             <div class="hero"></div>
@@ -257,7 +257,7 @@
         <g>
           <path fill="#010101" d="M82.32,7.888c-8.359-7.671-21.91-7.671-30.271,0l-5.676,5.21l-5.678-5.21c-8.357-7.671-21.91-7.671-30.27,0 c-9.404,8.631-9.404,22.624,0,31.255l35.947,32.991L82.32,39.144C91.724,30.512,91.724,16.52,82.32,7.888z"></path>
         </g>
-      </svg><span class="omega">Heart</a></span>
+      </svg><span class="omega"  data-text="Keyboard">Heart</a></span>
     </div>
 
 
@@ -278,9 +278,30 @@
            });
         });
     </script>
-     <script> let b = baffle('.user-name').start().reveal(1000, 1500);</script>
-     <script> function initialize(){let binary = ['0', '1'];
-                 let d = baffle('.scramble', {characters: binary}).start().reveal(1000, 2000);}
+
+     <script> let b = baffle('.user-name').start().reveal(2500, 1500);</script>
+     <script> 
+        let binary = ['0', '1'];
+     function initialize(){
+                 let d = baffle('.scramble', {characters: binary, speed : 80}).start().reveal(3000, 2000);}
+        
+    </script>
+    <script>
+    //Heart text shuffle
+    function keyboardsw(){
+
+         let c = baffle('.omega').start().text(text=> 'Keyboard').reveal(3000, 1000);
+     };
+
+     function heartsw(){
+        let g = baffle('.omega').start().text(text=> 'Heart').reveal(3000, 1000);
+     };
+
+    setInterval(function(){
+         keyboardsw();
+   setTimeout(function(){
+         heartsw();}, 5000);
+    },1e4 );
     </script>
 
 <script> 
@@ -288,13 +309,17 @@
 $(document).ready(function(){
      
   $('.devicon').css('opacity', 0);
-  $('.hire').css('opacity', 0);
-
-$('.devicon').waypoint(function() {
+    $('.devicon').waypoint(function() {
       $('.devicon').addClass('animated fadeInDown'),initialize();
+      this.destroy();
   },
    { offset: '80%' });
+    
+    setTimeout(function() {
+        $( "").addClass("blinking");
+    }, 3300);
 
+    $('.hire').css('opacity', 0);
     $('.hire').waypoint(function() {
       $('.hire').addClass('animated fadeIn');
       $('.name-box').addClass('animated fadeInDown');
@@ -303,8 +328,9 @@ $('.devicon').waypoint(function() {
       $('.button').addClass('animated fadeInUp');
   }, { offset: '80%' });
  });
-  
+
 </script>
+
 
 <!-- Card hover effect -->
 <!-- <script>
