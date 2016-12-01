@@ -58,8 +58,6 @@
             </div>
         </div>
         
-        <!-- <h1 class="Btext">><span class="blinking">_</span>Web.Dev</h1> -->
-        
             
             <div class="devicon">
                 <i class="fa fa-cogs fa-1x"></i><span class="scramble">  ><span>_</span>Skills and tools</span>
@@ -286,7 +284,7 @@
                  let d = baffle('.scramble', {characters: binary, speed : 80}).start().reveal(3000, 2000);}
         
     </script>
-    <script>
+<script>
     //Heart text shuffle
     function keyboardsw(){
 
@@ -302,13 +300,14 @@
    setTimeout(function(){
          heartsw();}, 5000);
     },1e4 );
-    </script>
+</script>
 
 <script> 
 //elements fade in's
 $(document).ready(function(){
-     
+    
   $('.devicon').css('opacity', 0);
+
     $('.devicon').waypoint(function() {
       $('.devicon').addClass('animated fadeInDown'),initialize();
       this.destroy();
@@ -316,7 +315,7 @@ $(document).ready(function(){
    { offset: '80%' });
     
     setTimeout(function() {
-        $( "").addClass("blinking");
+        $(".scramble :nth-child(1)").addClass("blinking");
     }, 3300);
 
     $('.hire').css('opacity', 0);
@@ -328,7 +327,12 @@ $(document).ready(function(){
       $('.button').addClass('animated fadeInUp');
   }, { offset: '80%' });
  });
-
+    $('.withLove').css('opacity', 0);
+    $('.withLove').waypoint(function() {
+      $('.withLove').addClass('animated fadeInUp');
+      
+  },
+   { offset: '90%' });
 </script>
 
 
