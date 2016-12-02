@@ -52,10 +52,10 @@ textarea {
 .devicon{
     color: rgba(193, 176, 45, 0.35);
     text-align: center;
-    margin: 40px;
+    margin: 1em;
     color: yellowgreen;
     font-family: monospace;
-    font-size: 40px;
+    font-size: 2.55em;
     letter-spacing: 2px;
 }
 
@@ -85,10 +85,11 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
 
 .glitchtxt {
   color: white;
-  font-size: 80px;
+  font-size: 4.444em;
   position: absolute;
-  width: 527px;
-  margin: 20px auto;
+  width: 6.58em;
+  margin: 0.25em auto;
+  /*margin: 2vw auto;*/
   height: 0px;
   left: 0;
   right: 0;
@@ -272,7 +273,7 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  height: 750px;
+  height: 40em;
   border-bottom: 3px solid #5d606f;
   z-index: 1;
 
@@ -280,13 +281,14 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
 
 #portfolioimg {
     border-radius: 500rem;
-    height: 250px;
+    height: 13.6em;
     }
 
 .hzline{
     border-right: 2px solid;
+    border-right: 0.111em solid;
     position: absolute;
-    height: 397px;
+    height: 22em;
     width: 0px;
     top: 0;
     left: 0;
@@ -297,13 +299,11 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
     opacity: 0;
 }
 .portfoliodiv{
-/*transform: translate(50%, 30%);*/
-position: absolute;
-left: 0;
-right: 0;
-top: 0;
-/*margin-top: 73px;*/
-margin-top: 175px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: 9.72em;
 
 }
 .portinfo{
@@ -312,21 +312,20 @@ margin-top: 175px;
     text-align: center;
     left: 0;
     right: 0;
+    top: 0.3em;
 }
 
 
 .user-name{
-  font-size: 34px;
-  padding: 4px;
+  font-size: 1.88em;
+  padding: 0.111em;
   color: #B95;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
   font-family: courier, monospace;
-  letter-spacing: 2px;
+  
   
 }
 body {
-  /*background: #efefef;*/
-  /*font-size: 62.5%;*/
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #B6B6B6;
@@ -666,6 +665,11 @@ form input[type="submit"]:focus {
 
 }
 
+@media screen and (min-width: 520px) {
+
+
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
