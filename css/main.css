@@ -55,7 +55,7 @@ textarea {
     margin: 1em;
     color: yellowgreen;
     font-family: monospace;
-    font-size: 2.55em;
+    font-size: 2.3em;
     letter-spacing: 2px;
 }
 
@@ -322,8 +322,12 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
   color: #B95;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
   font-family: courier, monospace;
-  
-  
+}
+.porthr{
+  width:16.4em;
+  margin-top:1vh; 
+  margin-bottom: 1vh; 
+  border-top: 0.1vh solid #767779;
 }
 body {
   font-family: 'Lato', sans-serif;
@@ -665,10 +669,50 @@ form input[type="submit"]:focus {
 
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (max-width: 600px) {
 
-
-
+  #particles-js{
+     height: 36em;
+  }
+  .glitchtxt{
+    font-size: 2.444em;
+    /*opacity: 1;*/
+  }
+  .portfoliodiv{
+    margin-top: 4.72em;
+  }
+  .portinfo{
+    /*opacity: 0.9;*/
+    width: none;
+    margin-left: none;
+  }
+  .hzline{
+    display: none;
+  }
+  #portfolioimg{
+    height: 7.6em;
+  }
+  .user-name{
+    font-size: 1.4em;
+  }
+  .porthr{
+    width: 12.4em;
+  }
+  .user-social{
+    font-size: 0.7em;
+  }
+  #message{
+    font-size: 0.9em;
+    top: 17.7em;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    right: 2px;
+    left: 2px;
+  }
+  .devicon{
+    font-size: 1.2em;
+  }
 }
 /* ==========================================================================
    Helper classes
