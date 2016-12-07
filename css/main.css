@@ -312,9 +312,24 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
     text-align: center;
     left: 0;
     right: 0;
+    /*margin:0 auto;*/
     top: 0.3em;
+    /*width: 24%;
+    animation-name: Moveinfo;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;*/
 }
-
+@keyframes Moveinfo {
+    0% {
+      transform: translateX(0px);
+  }
+    
+    100% {
+        transform: translateX(-85%);
+    }
+}
 
 .user-name{
   font-size: 1.88em;
@@ -653,6 +668,7 @@ form input[type="submit"]:focus {
     background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
     background-color: #1b1b27;
   } 
+ 
 
 /* ==========================================================================
    Media Queries
@@ -683,8 +699,9 @@ form input[type="submit"]:focus {
   }
   .portinfo{
     /*opacity: 0.9;*/
-    width: none;
-    margin-left: none;
+    width: 100% !important;;
+    margin-left: 0 !important;;
+    animation-name: none;
   }
   .hzline{
     display: none;
