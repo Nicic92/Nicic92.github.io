@@ -5600,9 +5600,44 @@ body {
 }
 @media (max-width: 1199px) {
   .tickets .ticket {
-    font-size: 14px;
-    height: 180px;
+  height: 163px;
+  font-size: 19px;
+  padding: 27px;
   }
+  .col-sm-3 {
+    width: 14%;
+  }
+  .imgsl{
+  height: 58px;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+}
+@media (max-width: 1199px) {
+  .tickets .ticket {
+  height: 150px;
+  font-size: 17px;
+  padding: 20px;
+  }
+  .col-sm-3 {
+    width: 13.6%;
+  }
+  .imgsl{
+  height: 53px;
+}
+}
+@media (max-width: 991px) {
+  .tickets .ticket {
+  height: 130px;
+  font-size: 15px;
+  padding: 12px;
+  }
+  .col-sm-3 {
+    width: 12.8%;
+  }
+  .imgsl{
+  height: 41px;
+}
 }
 .tickets .ticket hr {
   border-color: rgba(255, 255, 255, 0.6);
