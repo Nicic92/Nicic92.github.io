@@ -5362,12 +5362,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  font-size: 3vh;
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 2vh;
-  }
+  font-size: 2vh;
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -5550,8 +5545,8 @@ body {
 }
 @media (max-device-aspect-ratio: 3/4) {
   .hero {
-    padding-top: 100px;
-    padding-top: 10vh;
+    /*padding-top: 100px;
+    padding-top: 10vh;*/
   }
 }
 .hero h1 {

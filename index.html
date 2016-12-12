@@ -60,7 +60,7 @@
         
             
             <div class="devicon">
-                <i class="fa fa-cogs fa-1x"></i><span class="scramble">  ><span>_</span>Skills and tools</span>
+                <i class="fa fa-cogs fa-1x"></i><div class="binaryrand">  > Skills and tools</div><div class="binaryrand">_</div>
             </div>
                
             <div class="hero"></div>
@@ -296,8 +296,9 @@
      <script> 
         let binary = ['0', '1'];
      function initialize(){
-                 let d = baffle('.scramble', {characters: binary, speed : 80}).start().reveal(3000, 2000);}
-        
+                 let d = baffle('.binaryrand', {characters: binary, speed : 80}).start().reveal(3000, 2000);}
+
+        $('binaryrand')
     </script>
 <script>
     //Heart text shuffle
@@ -330,7 +331,7 @@ $(document).ready(function(){
    { offset: '80%' });
     
     setTimeout(function() {
-        $(".scramble :nth-child(1)").addClass("blinking");
+        $(".devicon :nth-child(3)").addClass("blinking");
     }, 3300);
 
     $('.hire').css('opacity', 0);
