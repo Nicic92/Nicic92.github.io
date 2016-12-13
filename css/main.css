@@ -55,7 +55,8 @@ textarea {
     margin: 1em;
     color: yellowgreen;
     font-family: monospace;
-    font-size: 2.3em;
+    /*font-size: 2.3em;*/
+    font-size: 40px;
     letter-spacing: 2px;
 }
 
@@ -85,7 +86,8 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
 
 .glitchtxt {
   color: white;
-  font-size: 4.444em;
+  /*font-size: 4.444em;*/
+  font-size: 85px;
   position: absolute;
   width: 6.58em;
   margin: 0.25em auto;
@@ -95,6 +97,7 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
   right: 0;
   opacity: 0;
   font-family:'Tele-Marines';
+  z-index: -1;
 
 }
 
@@ -273,29 +276,41 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  height: 40em;
+  /*height: 40em;*/
+  height: 725px;
   border-bottom: 3px solid #5d606f;
   z-index: 1;
 
 }
+#particles-js:before{
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+  background-image: url(../img/headbg.png);
+}
 
 #portfolioimg {
     border-radius: 500rem;
-    height: 13.6em;
+    /*height: 13.6em;*/
+    height: 220px;
     }
 
 .hzline{
     border-right: 2px solid;
-    border-right: 0.111em solid;
+    /*border-right: 0.111em solid;*/
+    border-right: 1px solid;
     position: absolute;
-    height: 22em;
+    /*height: 22em;*/
+    height: 380px;
     width: 0px;
     top: 0;
     left: 0;
     right: 0;
-    
     margin: auto;
-    
     opacity: 0;
 }
 .portfoliodiv{
@@ -303,8 +318,8 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
   left: 0;
   right: 0;
   top: 0;
-  margin-top: 9.72em;
-
+  /*margin-top: 9.72em;*/
+  margin-top: 200px;
 }
 .portinfo{
     position: absolute;
@@ -332,17 +347,23 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
 }
 
 .user-name{
-  font-size: 1.88em;
-  padding: 0.111em;
+  /*font-size: 1.88em;
+  padding: 0.111em;*/
+  font-size: 35px;
+  padding: 5px;
   color: #B95;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
   font-family: courier, monospace;
 }
 .porthr{
-  width:16.4em;
+  /*width:16.4em;
   margin-top:1vh; 
   margin-bottom: 1vh; 
-  border-top: 0.1vh solid #767779;
+  border-top: 0.1vh solid #767779;*/
+  width:290px;
+  margin-top:10px; 
+  margin-bottom: 10px; 
+  border-top: 1px solid #767779;
 }
 body {
   font-family: 'Lato', sans-serif;
@@ -353,6 +374,18 @@ body {
 }
 
 /*contact me */
+.top-border{
+    position: absolute;
+    height: 2px;
+    width: 24%;
+    background-color: #606b83;         /*TOP*/
+}
+.levo{
+    left: 0;
+}
+.desno{
+    right: 0;
+}
 .hire {
   position: relative;
   font-size:62.5%;
@@ -361,7 +394,7 @@ body {
   padding: 0px 0 60px;
   width: 80%;
   max-width: 1100px;
-  border: 2px solid #333;
+  border: 2px solid #606b83;         /*BORDER*/
   border-top: none;
  
 /*box-shadow: 0px 0px 35px 8px rgba(0,0,0,0.75);*/
@@ -370,11 +403,11 @@ body {
 .hire h1 { 
   margin-top: -24px;
   margin-bottom: 68px;
-  font-size: 4em;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-family: courier, sans-serif;
   font-weight: 100;
   display: inline-block;
+  color: yellowgreen;             /*TITLE*/
 }
 form {
   width: 58.33333%;
@@ -390,9 +423,9 @@ form .field label {
   position: absolute;
   top: 0;
   left: 0;
-  background: #313A3D;
+  background: #303d57;        /*INPUT FIELDS*/
   width: 100%;
-  padding: 18px 0;
+  padding: 19px 0;
   font-size: 1.45em;
   letter-spacing: 0.075em;
   -webkit-transition: all 333ms ease-in-out;
@@ -420,7 +453,7 @@ form .field label + span {
 form .field input[type="text"],
 form .field textarea {
   border: none;
-  background: #E8E9EA;
+  background: #1b1b27;
   width: 80.5%;
   margin: 0;
   padding: 18px 0;
@@ -433,7 +466,7 @@ form .field textarea {
 form .field input[type="text"]#msg,
 form .field textarea#msg {
     font-family: monospace;
-  height: 18px;
+  height: 17px;
   resize: none;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
@@ -468,7 +501,9 @@ form .field:hover label {
   color: white;
 }
 form input[type="submit"] {
-  background: #FD9638;
+
+  background: #0868ab;             /*DUGME*/
+
   color: white;
   -webkit-appearance: none;
   border: none;
@@ -494,18 +529,7 @@ form input[type="submit"]:focus {
   outline: none;
   background: #cd6302;
 }
-.top-border{
-    position: absolute;
-    height: 2px;
-    width: 24%;
-    background-color: #333;
-}
-.levo{
-    left: 0;
-}
-.desno{
-    right: 0;
-}
+
 
 /*footer drop*/
 
@@ -687,17 +711,28 @@ form input[type="submit"]:focus {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 800px) and (max-width: 1050px) {
+.hire h1 { 
+    font-size: 39px;
+}
+}
+@media screen and (max-width: 800px) {
+.hire h1 { 
+    font-size: 33px;
+}
+}
+
+@media screen and (max-width: 700px) {
 
   #particles-js{
-     height: 36em;
+     height: 49em;
   }
   .glitchtxt{
-    font-size: 2.444em;
+    font-size: 3.5em;
     /*opacity: 1;*/
   }
   .portfoliodiv{
-    margin-top: 4.72em;
+    margin-top: 6em;
   }
   .portinfo{
     /*opacity: 0.9;*/
@@ -709,20 +744,20 @@ form input[type="submit"]:focus {
     display: none;
   }
   #portfolioimg{
-    height: 7.6em;
+    height: 10.6em;
   }
   .user-name{
-    font-size: 1.4em;
+    font-size: 1.6em;
+    padding: 5px;
   }
   .porthr{
-    width: 12.4em;
-  }
-  .user-social{
-    font-size: 0.7em;
+    width: 16.4em;
+     margin-top:0px; 
+     margin-bottom: 0px; 
   }
   #message{
-    font-size: 0.9em;
-    top: 17.7em;
+    font-size: 1.2em;
+    top: 18em;
     width: 100%;
     margin-right: 0;
     text-align: center;
@@ -730,10 +765,23 @@ form input[type="submit"]:focus {
     left: 2px;
   }
   .devicon{
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
+  /*.hire h1 { 
+  margin-bottom: 2em;
+  font-size: 4em;
+  }*/
 }
-@media screen and (min-width: 601px) and (max-width: 875px) {
+@media screen and (max-width: 600px) {
+.hire h1 { 
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+.top-border{
+  width: 15%;
+}
+}
+/*@media screen and (min-width: 601px) and (max-width: 875px) {
     .portinfo{
     width: 42% !important;;
     margin-left: 2% !important;;
@@ -745,7 +793,7 @@ form input[type="submit"]:focus {
     margin-right: 1%;
   }
 
-}
+}*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -15,13 +15,15 @@ body {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
   font-family: Courier, monospace;
   font-smoothing: antialiased;
-  font-size: 1.28em;
+  /*font-size: 1.28em;*/
+  font-size: 22px;
   color: #B95;
   top: 1.7em;
   height: 0px;
   right: 0;
   width: 40%;
   margin-right: 2%;
+  z-index: -1;
 }
 
 #animate {
