@@ -396,14 +396,14 @@ src: local('Tele-Marines'), url('../Fonts/Telev2.woff') format('woff');
     text-align: center;
     left: 0;
     right: 0;
-    /*margin:0 auto;*/
+    margin:0 auto;
     top: 0.3em;
-    /*width: 24%;
+    width: 21%;
     animation-name: Moveinfo;
-    animation-delay: 2s;
+    animation-delay: 3s;
     animation-timing-function: ease-in;
     animation-duration: 1.5s;
-    animation-fill-mode: forwards;*/
+    animation-fill-mode: forwards;
 }
 @keyframes Moveinfo {
     0% {
@@ -798,15 +798,12 @@ form input[type="submit"]:focus {
   }
   .glitchtxt{
     font-size: 3.5em;
-    /*opacity: 1;*/
   }
   .portfoliodiv{
     margin-top: 6em;
   }
   .portinfo{
-    /*opacity: 0.9;*/
     width: 100% !important;;
-    margin-left: 0 !important;;
     animation-name: none;
   }
   .hzline{
@@ -852,10 +849,17 @@ form input[type="submit"]:focus {
     margin-top: 175px;
   }
   .portinfo{
-    width: 50% !important;;
-    margin-left: 0% !important;;
-    animation-name: none;
+    width: 50%;
   }
+  @keyframes Moveinfo {
+    0% {
+      transform: translateX(0px);
+  }
+    
+    100% {
+        transform: translateX(-50%);
+    }
+}
   .hzline{
     height: 329px;
   }
@@ -893,10 +897,17 @@ form input[type="submit"]:focus {
     margin-top: 180px;
   }
   .portinfo{
-    width: 40% !important;;
-    margin-left: 8% !important;;
-    animation-name: none;
+    width: 43%;
   }
+  @keyframes Moveinfo {
+    0% {
+      transform: translateX(0px);
+  }
+    
+    100% {
+        transform: translateX(-57%);
+    }
+}
   .hzline{
     height: 356px;
   }
@@ -921,10 +932,45 @@ form input[type="submit"]:focus {
 }
 @media screen and (min-width: 1050px) and (max-width: 1320px) {
     .portinfo{
-    width: 35% !important;;
-    margin-left: 10% !important;;
-    animation-name: none;
+    width: 35%;
   }
+  @keyframes Moveinfo {
+    0% {
+      transform: translateX(0px);
+  }
+    
+    100% {
+        transform: translateX(-65%);
+    }
+}
+}
+@media screen and (min-width: 1320px) and (max-width: 1500px) {
+    .portinfo{
+    width: 27%;
+  }
+  @keyframes Moveinfo {
+    0% {
+      transform: translateX(0px);
+  }
+    
+    100% {
+        transform: translateX(-73%);
+    }
+}
+}
+@media screen and (min-width: 1500px) and (max-width: 1700px) {
+    .portinfo{
+    width: 24%;
+  }
+  @keyframes Moveinfo {
+    0% {
+      transform: translateX(0px);
+  }
+    
+    100% {
+        transform: translateX(-76%);
+    }
+}
 }
 @media screen and (max-width: 600px) {
 .hire h1 { 

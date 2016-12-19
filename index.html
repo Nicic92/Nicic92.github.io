@@ -304,28 +304,24 @@
         <script src="js/waypoints.js"></script>
         <script type="text/javascript">
         //header reveal 
-        $(window).load(function(){
-        
-           $('.portinfo').fadeTo(2000, 0.9).animate({width:"27%", marginLeft: '16%'},1500, function(){
-            $('.hzline , .glitchtxt').fadeTo(1000, 1)
-           });
-        
-        
-        });
-        
-       
+        function testis(){
+                $('.hzline , .glitchtxt').fadeTo(1000, 1)};
+            $(window).load(function(){
+            
+               $('.portinfo').fadeTo(2000, 0.9),setTimeout(function(){testis()},3500);
+               
+            });
+         </script>
+    
+     <script>
+        function baffleuser(){ let b = baffle('.user-name').start().reveal(2500, 1500);}
     </script>
-    <script>
-        $(window).resize(function(){
-        If($(window).width()<750){
-        $('.hero').removeClass('hero');}
-        });
-
-    </script>
-     <script> let b = baffle('.user-name').start().reveal(2500, 1500);</script>
+     <script>
+         $(window).load(function(){baffleuser();});
+     </script>
      <script> 
         let binary = ['0', '1'];
-     function initialize(){
+        function initialize(){
                  let d = baffle('.binaryrand', {characters: binary, speed : 80}).start().reveal(3000, 2000);}
 
         $('binaryrand')
@@ -355,14 +351,14 @@ $(document).ready(function(){
   $('.devicon').css('opacity', 0);
 
     $('.devicon').waypoint(function() {
-      $('.devicon').addClass('animated fadeInDown'),initialize();
+      $('.devicon').addClass('animated fadeInDown'),initialize(),setTimeout(function() {
+        $(".devicon :nth-child(3)").addClass("blinking");
+    }, 2100);;
       this.destroy();
   },
    { offset: '80%' });
     
-    setTimeout(function() {
-        $(".devicon :nth-child(3)").addClass("blinking");
-    }, 3300);
+    
 
     $('.hire').css('opacity', 0);
     $('.hire').waypoint(function() {
@@ -371,7 +367,7 @@ $(document).ready(function(){
       $('.email-box').addClass('animated fadeInRight');
       $('.msg-box').addClass('animated fadeInLeft');
       $('.button').addClass('animated fadeInUp');
-  }, { offset: '80%' });
+  }, { offset: '90%' });
  });
     $('.withLove').css('opacity', 0);
     $('.withLove').waypoint(function() {
