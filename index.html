@@ -259,19 +259,19 @@
                 
                     <form action="https://formspree.io/nicic92@gmail.com" method="POST">
                           <div class="field name-box">
-                                <input type="text" id="name" placeholder="Who are you?"/>
+                                <input type="text" id="name" name="name" required placeholder="Who are you?"/>
                                 <label for="name">Name</label>
                                 <span class="ss-icon">check</span>
                           </div>
 
                           <div class="field email-box">
-                                <input type="text" id="email" placeholder="name@email.com"/>
+                                <input type="text" id="email" name="_replayto" required placeholder="name@email.com"/>
                                 <label for="email">Email</label>
                                 <span class="ss-icon">check</span>
                           </div>
 
                           <div class="field msg-box">
-                                <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+                                <textarea id="msg" rows="4" name="comment" required placeholder="Your message goes here..."/></textarea>
                                 <label for="msg">Msg</label>
                                 <span class="ss-icon">check</span>
                           </div>
@@ -302,7 +302,7 @@
         <script src="js/plugins.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/waypoints.js"></script>
-        <script type="text/javascript">
+        <script>
         //header reveal 
         function testis(){
                 $('.hzline , .glitchtxt').fadeTo(1000, 1)};
@@ -356,7 +356,7 @@ $(document).ready(function(){
     }, 2100);;
       this.destroy();
   },
-   { offset: '80%' });
+   { offset: '75%' });
     
     
 
@@ -389,6 +389,7 @@ $(document).ready(function(){
     });
 
 </script> -->
+
  <script>
         $(".fa-envelope").click(function() {
     $('html,body').animate({

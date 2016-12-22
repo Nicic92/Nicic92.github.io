@@ -527,7 +527,7 @@ form .field textarea {
   margin: 0;
   padding: 18px 0;
   padding-left: 19.5%;
-  color: #313A3D;
+  color: greenyellow;
   font-size: 1.4em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -535,6 +535,7 @@ form .field textarea {
 form .field input[type="text"]#msg,
 form .field textarea#msg {
     font-family: monospace;
+    overflow: hidden;
   height: 17px;
   resize: none;
   -webkit-transition: all 333ms ease-in-out;
@@ -557,16 +558,16 @@ form .field input[type="text"]:focus + label, form .field input[type="text"].foc
 form .field textarea:focus + label,
 form .field textarea.focused + label {
   width: 18%;
-  background: #FD9638;
+  background: #ff005d;
   color: #313A3D;
 }
 form .field input[type="text"].focused + label,
 form .field textarea.focused + label {
-  color: #FD9638;
+  color: #0868ab;
 }
 form .field:hover label {
   width: 18%;
-  background: #313A3D;
+  background: #0868ab;
   color: white;
 }
 form input[type="submit"] {
@@ -591,12 +592,12 @@ form input[type="submit"] {
   transition: all 333ms ease-in-out;
 }
 form input[type="submit"]:hover {
-  background: #313A3D;
-  color: #FD9638;
+  background: #ff005d;
+  color: white;
 }
 form input[type="submit"]:focus {
   outline: none;
-  background: #cd6302;
+  background:  #ff005d;
 }
 
 
