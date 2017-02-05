@@ -346,9 +346,9 @@
 
 <script> 
 //elements fade in's
-$(document).ready(function(){
+$(window).load(function(){
     
-  $('.devicon').css('opacity', 0);
+  $('.devicon').css("display","block");
 
     $('.devicon').waypoint(function() {
       $('.devicon').addClass('animated fadeInDown'),initialize(),setTimeout(function() {
@@ -367,14 +367,15 @@ $(document).ready(function(){
       $('.email-box').addClass('animated fadeInRight');
       $('.msg-box').addClass('animated fadeInLeft');
       $('.button').addClass('animated fadeInUp');
-  }, { offset: '90%' });
- });
+  }, { offset: '80%' });
+ 
     $('.withLove').css('opacity', 0);
     $('.withLove').waypoint(function() {
       $('.withLove').addClass('animated fadeInUp');
       
   },
-   { offset: '90%' });
+   { offset: '95%' });
+    });
 </script>
 
 

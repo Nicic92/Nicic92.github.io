@@ -50,6 +50,8 @@ textarea {
 
 /*Moving Gears*/
 .devicon{
+    opacity: 0;
+    display: none;
     color: rgba(193, 176, 45, 0.35);
     text-align: center;
     margin: 1em;
