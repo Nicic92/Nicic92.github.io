@@ -164,7 +164,7 @@ var
 	},})
 	})
 
-	gulp.task('ngrok', function () {
+	gulp.task('ngrok', function () {  //run ngrok, type: ngrok http 8001
 	connect.server({
 	root: folder.build,
 	port: 8001,
