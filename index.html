@@ -6,27 +6,15 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <link rel="stylesheet" href="css/normalize.min.css">
-        
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="css/cards.css">
         <link rel="preload" href="camphor/4b0f2143-ed99-4a36-8778-557047d0a0a3.woff2" as="font" type="font/woff2" crossorigin>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/main.css">
-        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
-         
-    <script>
-        function blinker() {
-        $('.blinking').fadeOut(500);
-        $('.blinking').fadeIn(500);
-        }
-        setInterval(blinker, 1000);
-    </script>
-    
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -47,7 +35,7 @@
                     <div class="user-social">
                         <a href="https://github.com/Nicic92" target="_blank"><i class="fa fa-github"></i></a>
                         <a href="https://facebook.com/mnicic1" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="mailto: target= nicic92@gmail.com"_blank"><i class="fa fa-envelope"></i></a>
+                        <a><i class="fa fa-envelope"></i></a>
                         <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
                         <a href="Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
                     </div>
@@ -59,9 +47,9 @@
         </div>
         
            
-            <div class="devicon">
+<div class="devicon">
                 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 100 100" style='width=2em; height: 2em;' xml:space="preserve">
     <path class="cogB" d="M40.1,50c0-5.5-4.5-10-10-10s-10,4.5-10,10s4.5,10,10,10S40.1,55.5,40.1,50z M60.1,45.7v8.7
     c0,0.6-0.5,1.3-1.1,1.4l-7.2,1.1c-0.4,1.3-0.9,2.4-1.5,3.6c1.3,1.9,2.7,3.6,4.2,5.4c0.2,0.3,0.4,0.6,0.4,1s-0.1,0.6-0.4,0.9
@@ -135,10 +123,10 @@
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="ticket" style="  background: #e67532 ;">
-                                <div class="title"><img class="imgsl" src="img/Foundation.png"></div>
+                            <div class="ticket" style="  background: #EB4A4B ;">
+                                <div class="title"><img class="imgsl" src="img/Gulp.png"></div>
                                 <hr>
-                                <p><strong>Foundation</strong></p>
+                                <p><strong>Gulp</strong></p>
                                 
                             </div>
                         </div>
@@ -291,130 +279,14 @@
         </g>
       </svg><span class="omega"  data-text="Keyboard">Heart</a></span>
     </div>
-
-
-        <script src="js/prefixfree.min.js"></script>
+        <!-- build:js js/main.js -->
         <script src="js/baffle.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/index.js"></script>
-        <script src="js/particles.js"></script>
-        <script src="js/app.js"></script>
+        <script src="js/particles.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
+        <!-- endbuild -->
         
-        <script>
-        //header reveal 
-        function testis(){
-                $('.hzline , .glitchtxt').fadeTo(1000, 1)};
-            $(window).load(function(){
-            
-               $('.portinfo').fadeTo(2000, 0.9),setTimeout(function(){testis()},3500);
-               
-            });
-         </script>
-    
-     <script>
-        function baffleuser(){ let b = baffle('.user-name').start().reveal(2500, 1500);}
-    </script>
-     <script>
-         $(window).load(function(){baffleuser();});
-     </script>
-     <script> 
-        let binary = ['0', '1'];
-        function initialize(){
-                 let d = baffle('.binaryrand', {characters: binary, speed : 80}).start().reveal(3000, 2000);}
-
-        $('binaryrand')
-    </script>
-<script>
-    //Heart text shuffle
-    function keyboardsw(){
-
-         let c = baffle('.omega').start().text(text=> 'Keyboard').reveal(3000, 1000);
-     };
-
-     function heartsw(){
-        let g = baffle('.omega').start().text(text=> 'Heart').reveal(3000, 1000);
-     };
-
-    setInterval(function(){
-         keyboardsw();
-   setTimeout(function(){
-         heartsw();}, 5000);
-    },1e4 );
-</script>
-
-<script> 
-//elements fade in's
-$(window).load(function(){
-    
-  $('.devicon').css("display","block");
-
-    $('.devicon').waypoint(function() {
-      $('.devicon').addClass('animated fadeInDown'),initialize(),setTimeout(function() {
-        $(".devicon :nth-child(3)").addClass("blinking");
-    }, 2100);;
-      this.destroy();
-  },
-   { offset: '75%' });
-    
-    
-
-    $('.hire').css('opacity', 0);
-    $('.hire').waypoint(function() {
-      $('.hire').addClass('animated fadeIn');
-      $('.name-box').addClass('animated fadeInDown');
-      $('.email-box').addClass('animated fadeInRight');
-      $('.msg-box').addClass('animated fadeInLeft');
-      $('.button').addClass('animated fadeInUp');
-  }, { offset: '80%' });
- 
-    $('.withLove').css('opacity', 0);
-    $('.withLove').waypoint(function() {
-      $('.withLove').addClass('animated fadeInUp');
-      
-  },
-   { offset: '95%' });
-    });
-</script>
-
-
-<!-- Card hover effect -->
-<!-- <script>
-    $(function(){
-        $('.col-sm-3').hover(function(){
-            $(this).addClass('animated bounce').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                    $(this).removeClass('animated bounce');
-            });
-        });
-    });
-
-</script> -->
-
- <script>
-        $(".fa-envelope").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".hire").offset().top},
-        2000);
-});
-    </script>
-<script>
-$(function() {
-    $(".col-sm-3").hover(function(){
-    $(this).stop().animate({"top" : "-35px"},200);
-    }, function(){
-    $(this).stop().animate({"top": "0"},200);
-    });
-    });
-</script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>
