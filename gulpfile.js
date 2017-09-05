@@ -160,13 +160,13 @@ var
 	gulp.task('browserSync', function() {
 	browserSync.init({
 	server: {
-	baseDir: folder.src
+	baseDir: folder.dest
 	},})
 	})
 
 	gulp.task('ngrok', function () {  //run ngrok, type: ngrok http 8001
 	connect.server({
-	root: folder.build,
+	root: folder.src,
 	port: 8001,
 	livereload: false
 	});

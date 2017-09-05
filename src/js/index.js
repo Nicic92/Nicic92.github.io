@@ -25,16 +25,16 @@
 
   MESSAGES.push({
     delay: 8800,
-    text: "Constantly learning new tech"
+    text: "A keen interest to learn new tech"
   });
 
   MESSAGES.push({
     delay: 10000,
-    text: "Also do other computer stuff.."
+    text: "Favorite line of code:"
   });
 MESSAGES.push({
-    delay: 15000,
-    text: "..sometimes_"
+    delay: 12000,
+    text: "Array(14).join('wat' - 1) + ' Batman';"
   });
 
   $container = $("#container");
