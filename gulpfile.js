@@ -5,19 +5,20 @@ npm init
 npm install
 
 file structure :
+dev loc
 src/css   -----\
-src/js 			---> goes to root 
+src/js 			---> (gulp) ---> goes to root 
 src/img   -----/
 src/.html ----/
 
 
 -------------------- TODO --------------------
-
+http2 optimized
 Lazyload CSS to lazy to include it: 
 Critical CSS 	 --- https://github.com/addyosmani/Critical 	- minimal css to make page apear normal
 loadcss 		 --- https://github.com/filamentgroup/loadCSS 	- asynchronosly load css
-gulp-rev 		 --- https://github.com/sindresorhus/gulp-rev 	- Static asset revisioning by appending content hash to filenames: unicorn.css → unicorn-d41d8cd98f.css
-hash file names 
+
+glyphhanger 	 --- https://github.com/filamentgroup/glyphhanger - font subset
 
 Commands:
 
@@ -28,9 +29,9 @@ gulp htmlmin 	--- Minimise html
 gulp html 		--- Copy html from dev to prod
 gulp fonts  	--- Copies Fonts from dev to prod
 gulp sass 		--- Compile Sass and place it into same CSS folder 
-gulp css 		--- Remove unused, autoprefix, minimize
+gulp css 		--- Remove unused, autoprefix, minimize, NO concat
 					Note: update gulp.task css: html[] ignore dynamic properies
-gulp js 		--- Babel, minimize
+gulp js 		--- Babel, minimize, NO concat
 gulp images 	--- Compress images Wont repeat if image is compresed
 gulp panda 		--- Best Image compresion 500/mo/key, Wont repet
 
@@ -46,12 +47,12 @@ gulp run 		--- Runs gulp html css js fonts images
 gulp watch 		--- Uses browserSync server Watches for changes reloads page, compiles SASS changes on save to CSS
 
 gulp concat		--- Runs LAZYPIPE: css, js WITH concatination and Hashing
-					Note: in HTML:
+					Note: in HTML: 
 					<!-- build:css css/main.css -->
 					<!-- endbuild -->
 					<!-- build:js  js/main.css -->
 					<!-- endbuild -->
-
+				This concat can also aplly to gulp js css, make task src ('./*.html/') and call .pipe(useref())  
 */
 
 var
@@ -61,22 +62,22 @@ var
 	sass = require('gulp-sass'),
 	browserSync = require('browser-sync').create(),
 	useref = require('gulp-useref'),  //use gulp-concat if this fucks up (must manualy add files) (good for constant gulp runs js/css (prod))
-	gulpif = require('gulp-if');
-	uglify = require('gulp-uglify'); //ES5 minifier
-	uglify6 = require('gulp-uglify-es').default; //ES6
-	csso = require('gulp-csso'); //minify
-	babel = require('gulp-babel');
-	plumber = require('gulp-plumber');
-	uncss = require('gulp-uncss');
-	lazypipe = require('lazypipe');
-	postcss = require('gulp-postcss');
-	autoprefixer = require('autoprefixer');
-	htmlmin = require('gulp-htmlmin');
-	tinypng = require('gulp-tinypng');
-	changed = require('gulp-changed');
-	connect = require('gulp-connect'); //for ngrok server (build)
-	rev = require('gulp-rev'); //hash plugin
-	revReplace = require('gulp-rev-replace'); //hash plugin
+	gulpif = require('gulp-if'),
+	uglify = require('gulp-uglify'), //ES5 minifier
+	uglify6 = require('gulp-uglify-es').default, //ES6
+	csso = require('gulp-csso'), //minify
+	babel = require('gulp-babel'),
+	plumber = require('gulp-plumber'),
+	uncss = require('gulp-uncss'),
+	lazypipe = require('lazypipe'),
+	postcss = require('gulp-postcss'),
+	autoprefixer = require('autoprefixer'),
+	htmlmin = require('gulp-htmlmin'),
+	tinypng = require('gulp-tinypng'),
+	changed = require('gulp-changed'),
+	connect = require('gulp-connect'), //for ngrok server (build)
+	rev = require('gulp-rev'), //hash plugin
+	revReplace = require('gulp-rev-replace'), //hash plugin
 	del = require('del');
 
 

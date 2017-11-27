@@ -4162,8 +4162,6 @@ function() {
                 offsetY: Math.random() * s - r,
                 rotation: 300 * Math.random() - 150
             }
-        }), a(), e("#sticky1"), e("#sticky2"), e("#sticky3"), e("#sticky4"), e("#sticky5"), $(".btn-share").click(function() {
-            return window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600"), !1
         })
     }
 });
